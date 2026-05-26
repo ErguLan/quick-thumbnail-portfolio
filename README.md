@@ -1,5 +1,16 @@
 # Fast Thumbnail & Creative Samples
 
+Quick-turn creative support for YouTube thumbnails and social media graphics.
+
+## Paid Work Menu
+
+- YouTube thumbnail concept: $10-$25 USD
+- Thumbnail A/B pair: $20-$45 USD
+- Short-form social graphic: $10-$20 USD
+- Spanish/English copy adaptation for thumbnails or ads: $8-$15 USD
+
+Same-day turnaround is available for simple briefs when source assets are provided.
+
 Available for quick paid test work:
 
 - YouTube thumbnail concepts
@@ -8,7 +19,9 @@ Available for quick paid test work:
 - Spanish/English copy adaptation
 - Fast turnaround edits
 
-Contact: open an issue on this repository or reply via the platform where this portfolio was shared.
+Contact: open a GitHub issue here:
+
+https://github.com/ErguLan/quick-thumbnail-portfolio/issues/new
 
 ## Samples
 
