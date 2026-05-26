@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fast Thumbnail & Creative Samples</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #15171a;
+        --muted: #5d6470;
+        --line: #dfe4ea;
+        --paper: #ffffff;
+        --soft: #f5f7fa;
+        --accent: #0f8b8d;
+        --accent-2: #e85d3f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+      }
+
+      header {
+        padding: 40px 20px 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .wrap {
+        width: min(1080px, 100%);
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(34px, 6vw, 72px);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      p {
+        max-width: 680px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      a.button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 18px;
+        border: 1px solid var(--ink);
+        border-radius: 6px;
+        color: var(--paper);
+        background: var(--ink);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      a.button.secondary {
+        color: var(--ink);
+        background: var(--paper);
+      }
+
+      main {
+        padding: 28px 20px 48px;
+      }
+
+      .menu {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--line);
+        margin-bottom: 28px;
+      }
+
+      .price {
+        min-height: 116px;
+        padding: 18px;
+        background: var(--soft);
+      }
+
+      .price strong {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 15px;
+      }
+
+      .price span {
+        color: var(--accent);
+        font-size: 24px;
+        font-weight: 800;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 24px 20px 36px;
+        color: var(--muted);
+      }
+
+      @media (max-width: 760px) {
+        .menu,
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <h1>Fast Thumbnail & Creative Samples</h1>
+        <p>Quick-turn YouTube thumbnails, social graphics, ad creatives, and Spanish/English copy adaptation. Same-day turnaround available for simple briefs with source assets.</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/ErguLan/quick-thumbnail-portfolio/issues/new?template=paid-creative-request.md">Request paid work</a>
+          <a class="button secondary" href="https://github.com/ErguLan/quick-thumbnail-portfolio">View repository</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <section class="menu" aria-label="Paid work menu">
+          <div class="price"><strong>YouTube thumbnail concept</strong><span>$10-$25</span></div>
+          <div class="price"><strong>Thumbnail A/B pair</strong><span>$20-$45</span></div>
+          <div class="price"><strong>Short-form social graphic</strong><span>$10-$20</span></div>
+          <div class="price"><strong>Copy adaptation</strong><span>$8-$15</span></div>
+        </section>
+        <section class="grid" aria-label="Samples">
+          <img src="thumbnail_7days.jpg" alt="7 day challenge thumbnail sample">
+          <img src="thumbnail_before_buy.jpg" alt="Before you buy thumbnail sample">
+          <img src="thumbnail_money_case.jpg" alt="Money case study thumbnail sample">
+          <img src="thumbnail_app_saved_time.jpg" alt="App saved time thumbnail sample">
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap">Available for paid test work, fast revisions, and short creative batches.</div>
+    </footer>
+  </body>
+</html>
