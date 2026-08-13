@@ -1,0 +1,54 @@
+{
+  "name": "Credential-Free Lead Triage Sample",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "lead-triage-demo",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "receive-lead",
+      "name": "Receive Lead",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [260, 300],
+      "webhookId": "lead-triage-demo"
+    },
+    {
+      "parameters": {
+        "jsCode": "const input = $json.body ?? $json;\nconst text = String(input.message ?? input.description ?? '').trim();\nconst budget = Number(input.budget ?? 0);\nconst urgency = /today|urgent|asap|24 ?hours/i.test(text) ? 'high' : budget >= 100 ? 'medium' : 'low';\nreturn [{ json: { name: String(input.name ?? '').trim(), contact: String(input.email ?? input.contact ?? '').trim(), summary: text.slice(0, 500), budget, urgency, nextAction: urgency === 'high' ? 'Reply within 1 hour' : 'Queue for review' } }];"
+      },
+      "id": "classify-lead",
+      "name": "Normalize and Triage",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [520, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "return-result",
+      "name": "Return Result",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [780, 300]
+    }
+  ],
+  "connections": {
+    "Receive Lead": {
+      "main": [[{"node": "Normalize and Triage", "type": "main", "index": 0}]]
+    },
+    "Normalize and Triage": {
+      "main": [[{"node": "Return Result", "type": "main", "index": 0}]]
+    }
+  },
+  "active": false,
+  "settings": {"executionOrder": "v1"},
+  "versionId": "credential-free-lead-triage-v1",
+  "meta": {"templateCredsSetupCompleted": false},
+  "tags": []
+}

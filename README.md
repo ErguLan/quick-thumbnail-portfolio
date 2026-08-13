@@ -2,6 +2,8 @@
 
 Quick-turn creative support for posters, launch graphics, YouTube thumbnails, and social media assets.
 
+The repository also includes `n8n_lead_triage_sample.json`, a credential-free workflow sample that receives a lead, normalizes the payload, assigns a simple urgency tier, and returns structured JSON. It is intentionally a demo topology: no private credentials or third-party accounts are included.
+
 ## Paid Work Menu
 
 - Poster concept: $45-$120 USD
