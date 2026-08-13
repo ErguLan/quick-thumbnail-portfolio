@@ -1,11 +1,12 @@
-# Fast Thumbnail & Creative Samples
+# Fast Visual Launch Kits
 
-Quick-turn creative support for YouTube thumbnails and social media graphics.
+Quick-turn creative support for posters, launch graphics, YouTube thumbnails, and social media assets.
 
 ## Paid Work Menu
 
-- YouTube thumbnail concept: $10-$25 USD
+- Poster concept: $45-$120 USD
 - Thumbnail A/B pair: $20-$45 USD
+- Launch graphics pack: $60-$180 USD
 - Short-form social graphic: $10-$20 USD
 - Spanish/English copy adaptation for thumbnails or ads: $8-$15 USD
 
@@ -13,6 +14,7 @@ Same-day turnaround is available for simple briefs when source assets are provid
 
 Available for quick paid test work:
 
+- Poster and event artwork
 - YouTube thumbnail concepts
 - Short-form social media graphics
 - Basic ad creatives
@@ -25,6 +27,8 @@ https://github.com/ErguLan/quick-thumbnail-portfolio/issues/new
 
 ## Samples
 
+![experimental 1990s rave poster sample](poster_rave_sample.png)
+![luxury rug collection catalog spread sample](rug_catalog_sample.png)
 ![7 day challenge thumbnail](thumbnail_7days.jpg)
 
 ![before you buy thumbnail](thumbnail_before_buy.jpg)
